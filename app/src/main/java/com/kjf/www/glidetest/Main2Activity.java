@@ -12,10 +12,10 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         ImageView ImageView = (android.widget.ImageView) findViewById(R.id.image);
-
+        ImageView ImageView2 = (android.widget.ImageView) findViewById(R.id.image2);
 
         //基本用法
         Glide.with(this)
@@ -23,5 +23,14 @@ public class Main2Activity extends AppCompatActivity {
 
        // GlideApp.with()
         //GlideApp
+
+
+        /*
+        占位符
+        placeholder
+        error
+        fallback
+        */
+        GlideApp.with(this).load("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2439096583,1320889890&fm=27&gp=0.jpg").placeholder(R.drawable.timg).error(R.drawable.error).into(ImageView2);
     }
 }
