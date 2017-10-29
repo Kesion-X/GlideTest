@@ -32,5 +32,7 @@ public class Main2Activity extends AppCompatActivity {
         fallback
         */
         GlideApp.with(this).load("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2439096583,1320889890&fm=27&gp=0.jpg").placeholder(R.drawable.timg).error(R.drawable.error).into(ImageView2);
+
+
     }
 }
